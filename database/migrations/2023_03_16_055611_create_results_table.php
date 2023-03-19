@@ -19,7 +19,9 @@ return new class extends Migration
             $table->integer('total_questions');
             $table->integer('correct_answers');
             $table->integer('incorrect_answers');
+            $table->integer('skipped_answers');
             $table->integer('score');
+            $table->integer('status');
             $table->timestamps();
         });
     }
